@@ -1,5 +1,5 @@
 <?php
-include 'conexao.php'; // Inclua seu arquivo de conexão aqui
+include 'conexao.php';
 
 function listarCandidatos() {
   global $conn;
