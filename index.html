@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inserir Fiscal</title>
+</head>
+<body>
+    <h1>Inserir Fiscal</h1>
+    <form action="acoes.php" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="cpf">CPF:</label><br>
+        <input type="text" id="cpf" name="cpf"><br>
+        <label for="sala_de_prova">Sala de Prova:</label><br>
+        <input type="number" id="sala_de_prova" name="sala_de_prova"><br>
+        <input type="hidden" name="action" value="incluirFiscal">
+        <input type="submit" value="Incluir Fiscal">
+    </form>
+
+    <h1>Listar Candidatos</h1>
+    <form action="acoes.php" method="post">
+        <input type="hidden" name="action" value="listarCandidatos">
+        <input type="submit" value="Listar Candidatos">
+    </form>
+
+    <h1>Alterar Sala de Prova</h1>
+    <form action="acoes.php" method="post">
+        <label for="id">ID do Candidato:</label><br>
+        <input type="text" id="id" name="id"><br>
+        <label for="sala_de_prova">Nova Sala de Prova:</label><br>
+        <input type="number" id="sala_de_prova" name="sala_de_prova"><br>
+        <input type="hidden" name="action" value="alterarSalaDeProva">
+        <input type="submit" value="Alterar Sala de Prova">
+    </form>
+</body>
+</html>
